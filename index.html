@@ -828,6 +828,13 @@ const USERS = [{
   "t": [],
   "pw": "lm2026"
 }, {
+  "n": "Paul Fox",
+  "c": "Atticus",
+  "r": "partner",
+  "w": [],
+  "t": [],
+  "pw": "lm2026"
+}, {
   "n": "Jeremy King",
   "c": "Ewing Outdoor Supply",
   "r": "partner",
@@ -1431,7 +1438,7 @@ const MTIMES = ["8:15 AM", "8:37 AM", "8:59 AM", "9:21 AM", "9:43 AM", "10:05 AM
 const BLUE = "#3E7D1F";
 const LBLUE = "#DDEFD1";
 const DBLUE = "#1E3D12";
-const APP_VERSION = "2026.11.25.1";
+const APP_VERSION = "2026.11.25.2";
 const HEADSHOTS = {
   "Caio Malufe": "caio-malufe.jpg",
   "Joshua Rupani": "joshua-rupani.jpg",
@@ -9847,7 +9854,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(
 // release triggers a fresh install + old caches get cleared.
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    const v = "2026.11.25.1";
+    const v = "2026.11.25.2";
     navigator.serviceWorker.register('sw.js?v=' + v, { scope: './' }).catch(() => {});
   });
 }
